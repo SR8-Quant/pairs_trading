@@ -7,7 +7,7 @@ cointegration_pairs_trading/
 │   ├── backtesting.ipynb
 ├── src/
 │   ├── __init__.py
-│   ├── config.py
+│   ├── config.yaml
 │   ├── data_preprocessing.py
 │   ├── stock_pairing.py
 │   ├── signal_processing.py
@@ -36,7 +36,7 @@ cointegration_pairs_trading/
 ### `src/`
 > Contains the source code modules that implement the core functionality.
 - **`__init__.py`**: Allows modules within `src/` to be imported elsewhere in the project.
-- **`config.py`**: Stores configuration settings and default parameters.
+- **`config.yaml`**: Stores configuration settings and default parameters.
 - **`data_preprocessing.py`**:
   - Implements data cleaning and preprocessing routines.
   - Saves processed data to the `data/` directory.
