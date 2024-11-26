@@ -45,7 +45,8 @@ cointegration_pairs_trading/
   - Identifies cointegrated pairs of assets.
 - **`signal_processing.py`**:
   - Generates long/short signals from pairs based on `stock_paring.py`.
-  - Manages positions and applies risk management.
+  - Manages positions
+  - Applies take-profit/risk management.
 - **`backtester.py`**: Executes trades based on signals from `strategy.py`.
 - **`parameter_tuning.py`**:
   - Defines parameter spaces and optimization objectives.
