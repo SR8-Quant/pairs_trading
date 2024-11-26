@@ -20,10 +20,10 @@ cointegration_pairs_trading/
 ├── .gitignore
 ```
 ## Description
-### `data/` Directory
+### `data/` *Directory*
 > Stores all data files used in this project.
 
-### `reports/` Directory
+### `reports/` *Directory*
 > Contains (Jupyter) Notebook filesfor analysis.
 - `parameter_tuning.ipynb`:
   - Explores and optimizes different parameters affecting strategy performance.
@@ -33,7 +33,7 @@ cointegration_pairs_trading/
   - Evaluates performance metrics.
   - Visualizes backtesting results and overall performance.
 
-### `src/` Directory
+### `src/` *Directory*
 > Contains the source code modules that implement the core functionality.
 - **`__init__.py`**: Allows modules within `src/` to be imported elsewhere in the project.
 - **`config.yaml`**: Stores configuration settings and default parameters.
@@ -51,10 +51,10 @@ cointegration_pairs_trading/
 - **`parameter_tuning.py`**: Runs optimization algorithms to find optimal parameter sets.
 - **`utils.py`**: Provides utility functions used across modules.
 
-### `test/` Directory
+### `test/` *Directory*
 > Contains unit tests to verify the correctness of code modules.
 
-### Root-Level Files
+### *Root-Level Files*
 - `requirements.txt`:
   - Specifies package names and versions required for the project.
   - Allows users to install all dependencies using `pip install -r requirements.txt`.
