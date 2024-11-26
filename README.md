@@ -1,15 +1,15 @@
-# Pairs Trading
+# Pairs Trading Project Structure
 ```
 cointegration_pairs_trading/
 ├── data/
 ├── notebooks/
-│   ├── parameter_tuning.ipynb
-│   ├── strategy_backtesting.ipynb
+│   ├── tuning_process_performing.ipynb
+│   ├── backtest_performing.ipynb
 ├── src/
 │   ├── __init__.py
 │   ├── config.py
 │   ├── data_preprocessing.py
-│   ├── stock_paring.py
+│   ├── stock_pairing.py
 │   ├── signal_processing.py
 │   ├── backtester.py
 │   ├── parameter_tuning.py
@@ -24,13 +24,11 @@ cointegration_pairs_trading/
 > Stores all data files used in this project.
 
 ### `notebooks/`  
-> Contains (Jupyter) Notebook files for analysis and development.
-- `parameter_tuning.ipynb`:
-  - Runs optimization algorithms to find optimal parameter sets.
+> Contains (Jupyter) Notebook files for analysis.
+- `tuning_process_performing.ipynb`:
   - Analyzes the impact of different parameters on strategy performance.
-- `strategy_backtesting.ipynb`:
-  - Runs the trading strategy over historical data.
-  - Evaluates performance metrics (e.g., Sharpe ratio).
+- `backtest_performing.ipynb`:
+  - Evaluates performance metrics (e.g., Sharpe ratio, DDs).
   - Visualizes backtesting results and performance.
 
 ### `src/`
@@ -40,18 +38,15 @@ cointegration_pairs_trading/
 - **`data_preprocessing.py`**:
   - Implements data cleaning and preprocessing routines.
   - Saves processed data to the `data/` directory.
-- **`stock_paring.py`**:
+- **`stock_pairing.py`**:
   - Implements cointegration tests (e.g., Engle-Granger, Johansen tests).
   - Identifies cointegrated pairs of assets.
 - **`signal_processing.py`**:
-  - Generates long/short signals from pairs based on `stock_paring.py`.
+  - Generates long/short signals from pairs based on `stock_pairing.py`.
   - Manages positions
   - Applies take-profit/risk management.
-- **`backtester.py`**: Executes trades based on signals from `strategy.py`.
-- **`parameter_tuning.py`**:
-  - Defines parameter spaces and optimization objectives.
-  - Implements parameter search algorithms.
-  - Finds parameter sets that optimize performance metrics.
+- **`backtester.py`**: Executes trades based on signals from `signal_processing.py`.
+- **`parameter_tuning.py`**: Runs optimization algorithms to find optimal parameter sets.
 - **`utils.py`**: Provides utility functions used across modules.
 
 ### `test/`
