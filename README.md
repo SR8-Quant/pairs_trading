@@ -30,7 +30,7 @@ cointegration_pairs_trading/
   - Analyzes the impact of different parameters on strategy performance.
 - `strategy_backtesting.ipynb`
   - Runs the trading strategy over historical data.
-  - Evaluates performance metrics, e.g. Sharpe ratio.
+  - Evaluates performance metrics (e.g., Sharpe ratio).
   - Visualizes backtesting results and performance.
 
 ## `src/`
@@ -38,9 +38,21 @@ cointegration_pairs_trading/
 - `__init__.py`
   - Allows modules within `src/` to be imported elsewhere in the project.
 - `config.py`
+  - Stores configuration settings and default parameters.
 - `data_preprocessing.py`
+  - Implements data cleaning and preprocessing routines.
+  - Saves processed data to the `data/` directory.
 - `stock_paring.py`
+  - Implements cointegration tests (e.g., Engle-Granger, Johansen tests).
+  - Identifies cointegrated pairs of assets.
 - `signal_processing.py`
+  - Generates long/short signals from pairs based on `stock_paring.py`.
+  - Manages positions and applies risk management.
 - `backtester.py`
+  - Executes trades based on signals from `strategy.py`.
 - `parameter_tuning.py`
+  - Defines parameter spaces and optimization objectives.
+  - Implements parameter search algorithms.
+  - Finds parameter sets that optimize performance metrics.
 - `utils.py`
+  - Provides utility functions used across modules.
