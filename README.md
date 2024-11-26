@@ -14,7 +14,7 @@ cointegration_pairs_trading/
 │   ├── backtester.py
 │   ├── parameter_tuning.py
 │   ├── utils.py
-├── tests/
+├── test/
 ├── requirements.txt
 ├── README.md
 ├── .gitignore
