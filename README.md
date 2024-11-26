@@ -2,7 +2,7 @@
 ```
 cointegration_pairs_trading/
 ├── data/
-├── notebooks/
+├── reports/
 │   ├── parameter_tuning.ipynb
 │   ├── backtesting.ipynb
 ├── src/
@@ -23,7 +23,7 @@ cointegration_pairs_trading/
 ### `data/`  
 > Stores all data files used in this project.
 
-### `notebooks/`  
+### `reports/`  
 > Contains (Jupyter) Notebook files for analysis.
 - `parameter_tuning.ipynb`:
   - Explores and optimizes different parameters affecting strategy performance.
