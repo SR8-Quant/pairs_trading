@@ -19,40 +19,50 @@ cointegration_pairs_trading/
 ├── README.md
 ├── .gitignore
 ```
-
-## `data/`  
+## Description
+### `data/`  
 > Stores all data files used in this project.
 
-## `notebooks/`  
+### `notebooks/`  
 > Contains (Jupyter) Notebook files for analysis and development.
-- `parameter_tuning.ipynb`
+- `parameter_tuning.ipynb`:
   - Runs optimization algorithms to find optimal parameter sets.
   - Analyzes the impact of different parameters on strategy performance.
-- `strategy_backtesting.ipynb`
+- `strategy_backtesting.ipynb`:
   - Runs the trading strategy over historical data.
   - Evaluates performance metrics (e.g., Sharpe ratio).
   - Visualizes backtesting results and performance.
 
-## `src/`
+### `src/`
 > Contains the source code modules that implement the core functionality.
-- `__init__.py`
-  - Allows modules within `src/` to be imported elsewhere in the project.
-- `config.py`
-  - Stores configuration settings and default parameters.
-- `data_preprocessing.py`
+- **`__init__.py`**: Allows modules within `src/` to be imported elsewhere in the project.
+- **`config.py`**: Stores configuration settings and default parameters.
+- **`data_preprocessing.py`**:
   - Implements data cleaning and preprocessing routines.
   - Saves processed data to the `data/` directory.
-- `stock_paring.py`
+- **`stock_paring.py`**:
   - Implements cointegration tests (e.g., Engle-Granger, Johansen tests).
   - Identifies cointegrated pairs of assets.
-- `signal_processing.py`
+- **`signal_processing.py`**:
   - Generates long/short signals from pairs based on `stock_paring.py`.
   - Manages positions and applies risk management.
-- `backtester.py`
-  - Executes trades based on signals from `strategy.py`.
-- `parameter_tuning.py`
+- **`backtester.py`**: Executes trades based on signals from `strategy.py`.
+- **`parameter_tuning.py`**:
   - Defines parameter spaces and optimization objectives.
   - Implements parameter search algorithms.
   - Finds parameter sets that optimize performance metrics.
-- `utils.py`
-  - Provides utility functions used across modules.
+- **`utils.py`**: Provides utility functions used across modules.
+
+### `test/`
+> Contains unit tests to verify the correctness of code modules.
+
+### `requirements.txt`
+> Lists all Python package dependencies.
+- Specifies package names and versions required for the project.
+- Allows users to install all dependencies using pip install `-r requirements.txt`.
+
+### `README.md`
+> Provides project documentation.
+
+### `.gitignore`
+> Defines files and directories to be ignored by Git.
