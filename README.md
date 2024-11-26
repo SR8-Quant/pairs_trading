@@ -25,11 +25,8 @@ cointegration_pairs_trading/
 
 ### `notebooks/`  
 > Contains (Jupyter) Notebook files for analysis.
-- `tuning_process_performing.ipynb`:
-  - Analyzes the impact of different parameters on strategy performance.
-- `backtest_performing.ipynb`:
-  - Evaluates performance metrics (e.g., Sharpe ratio, DDs).
-  - Visualizes backtesting results and performance.
+- `tuning_process_performing.ipynb`: Evaluates and Visualizes the results of different parameters on strategy performance.
+- `backtest_performing.ipynb`: Evaluates and Visualizes performance metrics (e.g., Sharpe ratio, DDs) for the optimal pameters.
 
 ### `src/`
 > Contains the source code modules that implement the core functionality.
