@@ -52,7 +52,7 @@ cointegration_pairs_trading/
 ### `requirements.txt`
 > Lists all Python package dependencies.
 - Specifies package names and versions required for the project.
-- Allows users to install all dependencies using pip install `-r requirements.txt`.
+- Allows users to install all dependencies using `pip install -r requirements.txt`.
 
 ### `README.md`
 > Provides project documentation.
